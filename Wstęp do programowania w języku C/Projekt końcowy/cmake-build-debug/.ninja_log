@@ -1,0 +1,13 @@
+# ninja log v5
+1	159	6974706412286346	build.ninja	afe19236f6cfb750
+13	309	6969928274816517	CMakeFiles/untitled.dir/struktura_polecenia.c.obj	7ac4dc5db4b3f209
+32	302	6969928274816517	CMakeFiles/untitled.dir/struktura_pamieci.c.obj	5351369a621c7c22
+37	297	6974701123117277	CMakeFiles/untitled.dir/task.c.obj	6962e21f9fdfa971
+297	490	6974701125135168	CMakeFiles/untitled.dir/utils.c.obj	372a0ffa12e90044
+21	292	6974701123036825	CMakeFiles/untitled.dir/main.c.obj	1ec2fa4535925686
+490	826	6974701128306696	untitled.exe	3fe1278a9298c99
+302	390	6969928275823828	CMakeFiles/untitled.dir/struktura_tasmy.c.obj	24cea80762666e6
+56	323	6974701123347653	CMakeFiles/untitled.dir/memory.c.obj	79d5b6f7ad91cedf
+292	475	6974701124943779	CMakeFiles/untitled.dir/tape.c.obj	fabf3ab74285b1e
+2	129	6974707382499726	CMakeFiles/untitled.dir/memory.c.obj	79d5b6f7ad91cedf
+130	260	6974707383770242	untitled.exe	3fe1278a9298c99

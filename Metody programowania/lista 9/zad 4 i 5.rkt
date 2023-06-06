@@ -1,0 +1,61 @@
+#lang racket
+
+(define dictionary
+  '((#\A . "._")   (#\B . "_...") (#\C . "_._.") (#\D . "_..")
+    (#\E . ".")    (#\F . ".._.") (#\G . "__.")  (#\H . "....")
+    (#\I . "..")   (#\J . ".___") (#\K . "_._")  (#\L . "._..")
+    (#\M . "__")   (#\N . "_.")   (#\O . "___")  (#\P . ".__.")
+    (#\Q . "__._") (#\R . "._.")  (#\S . "...")  (#\T . "_")
+    (#\U . ".._")  (#\V . "..._") (#\W . ".__")  (#\X . "_.._")
+    (#\Y . "_.__") (#\Z . "__..")
+    (#\a . "._")   (#\b . "_...") (#\c . "_._.") (#\d . "_..")
+    (#\e . ".")    (#\f . ".._.") (#\g . "__.")  (#\h . "....")
+    (#\i . "..")   (#\j . ".___") (#\k . "_._")  (#\l . "._..")
+    (#\m . "__")   (#\n . "_.")   (#\o . "___")  (#\p . ".__.")
+    (#\q . "__._") (#\r . "._.")  (#\s . "...")  (#\t . "_")
+    (#\u . ".._")  (#\v . "..._") (#\w . ".__")  (#\x . "_.._")
+    (#\y . "_.__") (#\z . "__..")
+    (#\0 . "_____") (#\1 . ".____") (#\2 . "..___") (#\3 . "...__")
+    (#\4 . "...._") (#\5 . ".....") (#\6 . "_....") (#\7 . "__...")
+    (#\8 . "___..") (#\9 . "____.")
+    (#\, . "__..__") (#\; . "_._._.") (#\? . "..__..")
+    (#\: . "___...") (#\' . ".____.") (#\- . "_...._") 
+    (#\/ . "_.._.")  (#\space . "")  (#\. . "._._._")
+    (#\+ . "._._.")  (#\@ . ".__._.") (#\= . "_..._")))
+
+; Zadanie 4
+(define (get-morse char)
+  (define (it x xs)
+    (cond [(null? xs) #\*]
+          [(equal? (car (car xs)) x) (cdr (car xs))]
+          [else (it x (cdr xs))]))
+  (it char dictionary))
+
+(define (morse-code str)
+  (let ([charlist (string->list str)])
+    (define (it charlist result)
+      (if (null? charlist)
+          (string-join (reverse result))
+          (it (cdr charlist) (cons (get-morse (car charlist)) result))))
+    (it charlist '())))
+
+(morse-code "Metody Programowania")
+
+; Zadanie 5 
+(define (get-char char)
+  (define (it x xs)
+    (cond [(null? xs) #\*]
+          [(equal? (cdr (car xs)) x) (car (car xs))]
+          [else (it x (cdr xs))]))
+  (it char dictionary))
+
+(define (morse-decode str)
+  (let ([morselist (string-split str " ")])
+    (define (it morselist result)
+      (if (null? morselist)
+          (list->string (reverse result))
+          (it (cdr morselist) (cons (get-char (car morselist)) result))))
+    (it morselist '())))
+
+(morse-decode "__ .__.  ..___ _____ ..___ ..___")
+(morse-decode (morse-code "Metody Programowania"))

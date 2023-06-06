@@ -1,0 +1,3 @@
+C:/Users/Marcin/CLionProjects/4_lista_Cpp/cmake-build-debug/CMakeFiles/4_lista_Cpp.dir
+C:/Users/Marcin/CLionProjects/4_lista_Cpp/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Marcin/CLionProjects/4_lista_Cpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir

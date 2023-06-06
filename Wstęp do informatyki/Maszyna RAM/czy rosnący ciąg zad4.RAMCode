@@ -1,0 +1,22 @@
+          read  1
+          load  1
+          sub   =1
+          store 1
+          read  2
+poczatek: load  1
+          jzero dobrze
+          load  1
+          sub   =1
+          store 1
+          read  3
+          load  2
+          sub   3
+          jgtz  zle
+          jzero zle
+          load  3
+          store 2
+          jump  poczatek
+zle:      write =0
+          halt  
+dobrze:   write =1
+          halt  

@@ -1,0 +1,11 @@
+#lang racket
+(* (+ 2 2)      5) ; poprawne
+
+; (* (+ 2 2) (5) ) znaki "()" oznaczają jakąś procedurę,
+;                  którą program może wykonać, a (5) nią nie jest.
+
+; (*(+(2 2) 5) ) to samo (2 2) to nie procedura
+
+(*(+ 2
+   2) 5) ; poprawne
+

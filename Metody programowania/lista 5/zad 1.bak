@@ -1,0 +1,10 @@
+#lang plait
+
+(define (f2 f g x)
+  (f x (g x)))
+
+(define (f3 x)
+  ((lambda (x) x) ((lambda (x) x) ((lambda (x) x) x))))
+
+(define (f4 f g x)
+  ((lambda (x) (pair (f x) (g x))) x))

@@ -1,0 +1,20 @@
+          read  1        #ilość
+          load  =3
+          store 2        #adres
+poczatek: read  ^2
+          load  2
+          add   =1
+          store 2
+          load  1
+          sub   =1
+          store 1
+          jzero nastepny
+          jump  poczatek
+nastepny: load  2
+          sub   =1
+          store 2
+          sub   =2
+          jzero koniec
+          write ^2
+          jump  nastepny
+koniec:   halt  

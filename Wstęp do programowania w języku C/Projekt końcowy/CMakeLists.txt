@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.24)
+project(untitled C)
+
+set(CMAKE_C_STANDARD 11)
+
+add_executable(untitled main.c memory.c task.c tape.c utils.c)
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/polecenia.txt DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/dane.txt DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/test_jump.txt DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/nwd.txt DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/test_argument_^.txt DESTINATION ${CMAKE_CURRENT_BINARY_DIR})

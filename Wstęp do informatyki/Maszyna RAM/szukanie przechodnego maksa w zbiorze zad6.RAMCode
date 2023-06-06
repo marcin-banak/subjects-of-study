@@ -1,0 +1,44 @@
+                   read  1                 #ilość
+                   read  2                 #obecny
+                   load  1
+                   sub   =1
+                   jzero jednoelementowy
+                   store 1
+szukamymaks:       read  3                 #nastepny
+                   load  2
+                   sub   3
+                   jgtz  mamymaks
+                   jzero niegit
+                   jump  zamiana1
+kontynuuj1:        load  1
+                   sub   =1
+                   store 1
+                   jzero git
+                   jump  szukamymaks
+mamymaks:          load  1
+                   sub   =1
+                   jzero git
+                   store 1
+sprawdzamyczymaks: read  3
+                   load  3
+                   sub   2
+                   jgtz  niegit
+                   jzero niegit
+                   jump  zamiana2
+kontynuuj2:        load  1
+                   sub   =1
+                   store 1
+                   jzero git
+                   jump  sprawdzamyczymaks
+zamiana1:          load  3
+                   store 2
+                   jump  kontynuuj1
+zamiana2:          load  3
+                   store 2
+                   jump  kontynuuj2
+jednoelementowy:   write =1
+                   halt  
+niegit:            write =0
+                   halt  
+git:               write =1
+                   halt  

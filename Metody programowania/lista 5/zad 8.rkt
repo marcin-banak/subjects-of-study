@@ -1,0 +1,22 @@
+#lang plait
+
+(define-type Prop
+  (var [v : String])
+  (conj [l : Prop] [r : Prop])
+  (disj [l : Prop] [r : Prop])
+  (neg [f : Prop]))
+
+(define h-s (hash-set (hash (list (pair "a" #t) (pair "b" #t))) "c" #f))
+(define p-contradict (conj (disj (var "a") (var "b")) (neg (conj (var "a") (var "b"))))) ; (a \/ b) ^ ~(a \/b)
+(define p-tautology (disj (conj (var "a") (var "c")) (neg (conj (var "a") (var "c"))))) ; (a ^ b) \/ ~(a ^ b)
+
+(define (eval h p)
+  (cond [(var? p) (some-v (hash-ref h (var-v p)))]
+        [(conj? p) (and (eval h (conj-l p)) (eval h (conj-r p)))]
+        [(disj? p) (or (eval h (disj-l p)) (eval h (disj-r p)))]
+        [else (if (equal? (eval h (neg-f p)) #t)
+                  #f
+                  #t)]))
+
+(eval h-s p-contradict)
+(eval h-s p-tautology)

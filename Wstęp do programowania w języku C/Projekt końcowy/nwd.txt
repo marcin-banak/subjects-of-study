@@ -1,0 +1,30 @@
+read 1 -
+read 2 -
+load 2 -
+sub 1 -
+jgtz zamiana -
+load 2 zacznij
+jzero koniec -
+jump modulo -
+load 2 kolejny
+sub 1 -
+jgtz zamiana -
+jump zacznij -
+load 1 zamiana
+store 3 -
+load 2 -
+store 1 -
+load 3 -
+store 2 -
+jump zacznij -
+load 1 modulo
+div 2 -
+mult 2 -
+store 4 -
+load 1 -
+sub 4 -
+store 1 -
+jump kolejny -
+write 1 koniec
+halt
+koniec

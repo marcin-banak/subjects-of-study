@@ -1,0 +1,14 @@
+load =3 -
+store 1 -
+add 1 -
+store 2 -
+load =1 -
+jgtz skacze -
+load =69 -
+store 3 -
+load =420 skacze
+store 4
+write 1 -
+write 2 -
+write 3 -
+koniec

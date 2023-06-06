@@ -1,0 +1,29 @@
+              read  1
+              read  2
+              read  3
+              load  1
+              sub   2
+              jgtz  dwamniejsze
+              load  1
+              store 5
+              load  2
+              store 1
+              load  5
+              store 2
+dwamniejsze:  load  1
+              sub   3
+              jgtz  trzymniejsze
+              load  1
+              store 5
+              load  3
+              store 1
+              load  5
+              store 3
+trzymniejsze: load  2
+              add   3
+              sub   1
+              jgtz  trojkat
+              write =0
+              halt  
+trojkat:      write =1
+              halt  

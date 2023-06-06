@@ -1,0 +1,10 @@
+# ninja log v5
+12	542	7010370194636957	CMakeFiles/3_lista_cpp.dir/Number.cpp.obj	75ec6eab5d1043c4
+2	367	7010377225050383	CMakeFiles/3_lista_cpp.dir/main.cpp.obj	500c932e4213b661
+367	459	7010377225929298	3_lista_cpp.exe	63ea031fa0b79b5a
+3	484	7010381411286529	CMakeFiles/3_lista_cpp.dir/main.cpp.obj	500c932e4213b661
+484	633	7010381412824797	3_lista_cpp.exe	63ea031fa0b79b5a
+26	527	7010423175290347	CMakeFiles/3_lista_cpp.dir/Number.cpp.obj	75ec6eab5d1043c4
+528	677	7010423176790545	3_lista_cpp.exe	63ea031fa0b79b5a
+22	1041	7012746757418698	CMakeFiles/3_lista_cpp.dir/Number.cpp.obj	75ec6eab5d1043c4
+1042	2018	7012746767137165	3_lista_cpp.exe	63ea031fa0b79b5a

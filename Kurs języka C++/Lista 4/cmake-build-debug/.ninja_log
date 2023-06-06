@@ -1,0 +1,25 @@
+# ninja log v5
+3	531	7016387055246897	CMakeFiles/4_lista_Cpp.dir/BitTab.cpp.obj	3f0e45c22d7e2c14
+3	418	7016390272850880	CMakeFiles/4_lista_Cpp.dir/main.cpp.obj	3cf2f12380ca207c
+418	546	7016390274094079	4_lista_Cpp.exe	d7084d42db72f94a
+2	414	7016390548704520	CMakeFiles/4_lista_Cpp.dir/main.cpp.obj	3cf2f12380ca207c
+415	539	7016390549928576	4_lista_Cpp.exe	d7084d42db72f94a
+3	421	7016390807790475	CMakeFiles/4_lista_Cpp.dir/main.cpp.obj	3cf2f12380ca207c
+421	551	7016390809045329	4_lista_Cpp.exe	d7084d42db72f94a
+8	580	7016391541258043	CMakeFiles/4_lista_Cpp.dir/main.cpp.obj	3cf2f12380ca207c
+3	606	7016391541578871	CMakeFiles/4_lista_Cpp.dir/BitTab.cpp.obj	3f0e45c22d7e2c14
+606	737	7016391542865620	4_lista_Cpp.exe	d7084d42db72f94a
+3	1219	7016391981555163	CMakeFiles/4_lista_Cpp.dir/BitTab.cpp.obj	3f0e45c22d7e2c14
+1220	1448	7016391983739372	4_lista_Cpp.exe	d7084d42db72f94a
+4	453	7016392421662422	CMakeFiles/4_lista_Cpp.dir/BitTab.cpp.obj	3f0e45c22d7e2c14
+453	566	7016392422759191	4_lista_Cpp.exe	d7084d42db72f94a
+3	472	7016393171518788	CMakeFiles/4_lista_Cpp.dir/BitTab.cpp.obj	3f0e45c22d7e2c14
+472	642	7016393173181141	4_lista_Cpp.exe	d7084d42db72f94a
+8	527	7016394425274293	CMakeFiles/4_lista_Cpp.dir/main.cpp.obj	3cf2f12380ca207c
+2	561	7016394425654240	CMakeFiles/4_lista_Cpp.dir/BitTab.cpp.obj	3f0e45c22d7e2c14
+562	697	7016394426969672	4_lista_Cpp.exe	d7084d42db72f94a
+21	612	7016418218988101	CMakeFiles/4_lista_Cpp.dir/main.cpp.obj	3cf2f12380ca207c
+13	654	7016418219479653	CMakeFiles/4_lista_Cpp.dir/BitTab.cpp.obj	3f0e45c22d7e2c14
+654	814	7016418221059662	4_lista_Cpp.exe	d7084d42db72f94a
+11	2755	7021503180914618	CMakeFiles/4_lista_Cpp.dir/BitTab.cpp.obj	3f0e45c22d7e2c14
+2757	3008	7021503184672128	4_lista_Cpp.exe	d7084d42db72f94a
