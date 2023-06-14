@@ -1,0 +1,18 @@
+#lang plait
+
+(define-type Exp
+  (numE [n : Number])
+  (ifE [b : Exp] [l : Exp] [r : Exp])
+  (varE [x : Symbol])
+  (letE [x : Symbol] [e1 : Exp] [e2 : Exp])
+  (lamE [x : Symbol] [e : Exp])
+  (appE [e1 : Exp] [e2 : Exp])
+  (letrecE [x : Symbol] [e1 : Exp] [e2 : Exp]))
+
+(define (parse [s : S-Exp]) : Exp
+  (cond
+    [(s-exp-match? `NUMBER s)
+     (numE (s-exp-number s))]
+    [(s-exp-match? `SYMBOL s)
+     (varE (s-exp->symbol s))]
+     
